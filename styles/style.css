@@ -39,9 +39,11 @@ button:hover {
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 20px;
+  margin-left: 45px;
 
 }
 
