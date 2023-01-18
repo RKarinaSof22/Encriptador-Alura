@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #f3f5fc;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  outline: none;
+  border: none;
+  /* border: 1px solid blue; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  resize: none;
+  /* desactiva el redimensionamiento de los text area */
+}
+
+button {
+  width: 50%;
+  max-width: 300px;
+  min-width: 134px;
+  padding: 10px;
+  border: 1px solid #0a3871;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: #0a3871;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+}
+
+button:hover {
+  background-color: #0a3871;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+main {
+  display: grid;
+  justify-items: center;
+}
+
+.contenedor {
+  display: grid;
+  gap: 10px;
+  width: 90%;
+
+}
+
+.caja {
+  display: grid;
+  justify-items: center;
+}
+
+.caja div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.caja .ta-entrada {
+  width: 90%;
+  height: 200px;
+  box-sizing: border-box;
+  color: rgb(41, 41, 41);
+}
+
+.caja .recomendacion {
+  text-align: justify;
+}
+
+.caja .recomendacion i {
+  color: #0a3871;
+}
+
+.caja .botoncitos {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+}
+
+.marco-muñeco {
+  display: grid;
+  justify-items: center;
+}
+
+.marco-muñeco .resultado {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  height: 200px;
+  box-sizing: border-box;
+  width: 90%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.img-muñeco {
+  display: none;
+}
+
+.marco-muñeco .muñeco {
+  height: 100%;
+}
+
+.muñeco .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.muñeco .info h2,
+p {
+  margin: 0;
+  text-align: center;
+}
+
+.muñeco .info h2 {
+  margin-bottom: 10px;
+}
+
+/* text area de salida */
+.sin-muñeco {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sin-muñeco .ta-salida {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* fin de text area de salida */
+
+/* media querys */
+@media (min-width: 640px) {
+  .botoncitos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .botoncitos button {
+    width: 80%;
+  }
+}
+
+@media (min-width:1024px) {
+  main {
+    height: 80vh;
+  }
+
+  .img-muñeco {
+    display: block;
+    height: 200px;
+  }
+
+  .logo {
+    margin-top: 50px;
+  }
+
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .marco-muñeco {
+    align-self: start;
+    height: 100%;
+  }
+
+  .marco-muñeco .resultado {
+    height: 60%;
+  }
+
+  .caja {
+    grid-template-rows: 60% 40%;
+    gap: 10px;
+  }
+
+  .caja .recomendacion {
+    margin-bottom: 10px;
+  }
+
+  .caja .ta-entrada {
+    height: 100%;
+  }
+}
+
+/* fin media querys */
+
+
+/* esta funciona con js */
+.noDisplay {
+  display: none;
+}

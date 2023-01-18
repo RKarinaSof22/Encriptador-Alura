@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/images/Logo.svg" alt="logoalura">
+    </header>
+    <main>
+        <div class="contenedor">
+            <section class="caja">
+                <textarea placeholder="Ingrese el texto aqui" class="ta-entrada"></textarea>
+                <div>
+                    <p class="recomendacion"><i class="fas fa-exclamation-circle"></i> Solo letras minusculas y sin
+                        acentos
+                        para
+                        la encriptación normal</p>
+                    <div class="botoncitos">
+                        <button class="btn-encriptar">Encriptar</button>
+                        <button class="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+
+            </section>
+            <section class="marco-muñeco">
+                <div class="resultado">
+                    <div class="muñeco ">
+                        <div class="info">
+                            <img class="img-muñeco" src="images/Muñeco.svg" alt="muñeco_alura">
+                            <h2>Ningún mensaje fue encontrado</h2>
+                            <p><i class="fas fa-users"></i>Ingrese el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                    <!-- no display lo desaparece -->
+                    <div class="sin-muñeco noDisplay">
+                        <!-- disabled: desactiva el ingreso de texto -->
+                        <textarea class="ta-salida" disabled></textarea>
+                        <button class="btn-copiar">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <script src="js/encrypt.js"></script>
+    <script src="js/other.js"></script>
+</body>
+
+</html>
